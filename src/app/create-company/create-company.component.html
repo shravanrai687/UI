@@ -1,0 +1,17 @@
+
+<h2 class="text-center">Add Companies</h2>
+<div class="col-md-8  offset-md-3">
+<form (ngSubmit)="onSubmit()">
+    
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="company.name" name="name">
+    </div>
+    <div class="form-group">
+        <label>Sector</label>
+        <input type="text" class="form-control" id="sector" [(ngModel)]="company.sector" name="sector">
+    </div>
+   
+<button class="btn btn-success" type="submit">Submit</button>
+</form>
+</div>
